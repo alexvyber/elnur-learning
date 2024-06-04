@@ -19,8 +19,29 @@ function divide(int $a, int $b): int
 }
 
 
-
 function multiply(int $a, int $b): int
 {
     return $a * $b;
 }
+
+function addThree(int $a, int $b): int
+{
+    return $a + $b + $b ;
+}
+
+function multiplyThree(int $a, int $b):int
+ {
+    return  ($a * $b *$b);
+   
+}
+function divideThree ( int $a, int $b): int
+{
+    return ( $a / $b / $b);
+}
+function substractThree (int $a, int $b): int
+{
+    return $a - $b - $b;
+}
+
+
+
