@@ -144,41 +144,41 @@ test('find min', function () {
 });
 
 
-// test('sum array',  function () {
-//     $result = sum_arrray([60, 40, 20, 25, 40]);
-//     $result_two = sum_arrray([132, 360, 720, 132, 756]);
-//     expect($result)->toBe(185);
-//     expect($result_two)->toBe(2100);
-// });
+test('sum array',  function () {
+    $result = sum_arrray([60, 40, 20, 25, 40]);
+    $result_two = sum_arrray([132, 360, 720, 132, 756]);
+    expect($result)->toBe(185);
+    expect($result_two)->toBe(2100);
+});
 
 
-// test('substract all',  function () {
-//     $result = substract_all(200, [60, 40, 20, 25, 40]);
-//     $result_two = substract_all(2100, [132, 360, 720, 132, 756]);
-//     expect($result)->toBe(15);
-//     expect($result_two)->toBe(0);
-// });
+test('substract all',  function () {
+    $result = substract_all(200, [60, 40, 20, 25, 40]);
+    $result_two = substract_all(2100, [132, 360, 720, 132, 756]);
+    expect($result)->toBe(15);
+    expect($result_two)->toBe(0);
+});
 
 
-// test('multiply all',  function () {
-//     $result = multiply_all([60, 40, 20, 25, 40]);
-//     $result_two = multiply_all([132, 360, 720, 132, 756]);
-//     expect($result)->toBe(48000000);
-//     expect($result_two)->toBe(3414323404800);
-// });
+test('multiply all',  function () {
+    $result = multiply_all([60, 40, 20, 25, 40]);
+    $result_two = multiply_all([132, 360, 720, 132, 756]);
+    expect($result)->toBe(48000000);
+    expect($result_two)->toBe(3414323404800);
+});
 
 
-// test('divide by all',  function () {
-//     $result = divide_by_all(48000000, [60, 40, 20, 25, 40]);
-//     $result_two = divide_by_all(3414323404800, [132, 360, 720, 132, 4]);
-//     expect($result)->toBe(1);
-//     expect($result_two)->toBe(189);
-// });
+test('divide by all',  function () {
+    $result = divide_by_all(48000000, [60, 40, 20, 25, 40]);
+    $result_two = divide_by_all(3414323404800, [132, 360, 720, 132, 4]);
+    expect($result)->toBe(1);
+    expect($result_two)->toBe(189);
+});
 
 
-// test('find repeated', function () {
-//     $result = find_repeated([60, 40, 20, 25, 40]);
-//     $result_two = find_repeated([132, 360, 720, 132, 756]);
-//     expect($result)->toBe(40);
-//     expect($result_two)->toBe(132);
-// });
+test('find repeated', function () {
+    $result = find_repeated([60, 40, 20, 25, 40]);
+    $result_two = find_repeated([132, 360, 720, 132, 756]);
+    expect($result)->toBe(40);
+    expect($result_two)->toBe(132);
+});
