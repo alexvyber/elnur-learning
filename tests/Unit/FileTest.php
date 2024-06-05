@@ -94,21 +94,25 @@ test('find max', function () {
     $result = find_max(60, 40, 20);
     $result_two = find_max(132, 360, 720);
     $result_three = find_max(360, 132, 720);
+    $result_four = find_max(720, 360, 132, );
 
     expect($result)->toBe(60);
     expect($result_two)->toBe(720);
     expect($result_three)->toBe(720);
+    expect($result_four)->toBe(720);
 });
 
 
 test('find min', function () {
     $result = find_min(60, 40, 20);
     $result_two = find_min(132, 360, 720);
-    $result_three = find_min(360,  720, 132);
+    $result_three = find_min(360, 720, 132);
+    $result_four = find_min(720, 360, 132);
 
     expect($result)->toBe(20);
     expect($result_two)->toBe(132);
     expect($result_three)->toBe(132);
+    expect($result_four)->toBe(132);
 });
 
 
