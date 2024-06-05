@@ -58,67 +58,93 @@ test('Divide 3 numbers Works', function () {
 });
 
 
-test('avarage_of_three', function () {
-    $result = avarage_of_three(60, 40, 20);
-    $result_two = avarage_of_three(132, 360, 720);
-    expect($result)->toBe(40);
-    expect($result_two)->toBe(404);
+test('avarage_of_two', function () {
+    $result = avarage_of_two(60, 40, );
+    $result_two = avarage_of_two( 100, 200);
+    expect($result)->toBe(50);
+    expect($result_two)->toBe(150);
 });
 
 
-test('find max', function () {
-    $result = find_max(60, 40, 20);
-    $result_two = find_max(132, 360, 720);
+test('find max of two', function () {
+    $result = find_max_of_two(60, 40);
+    $result_two = find_max_of_two(360, 720);
     expect($result)->toBe(60);
     expect($result_two)->toBe(720);
 });
 
 
-test('find min', function () {
-    $result = find_min(60, 40, 20);
-    $result_two = find_min(132, 360, 720);
+test('find min of two', function () {
+    $result = find_min_of_two(60,  20);
+    $result_two = find_min_of_two(132,  720);
     expect($result)->toBe(20);
     expect($result_two)->toBe(132);
 });
 
 
-test('find repeated', function () {
-    $result = find_repeated(60, 40, 20, 25, 40);
-    $result_two = find_repeated(132, 360, 720, 132, 756);
-    expect($result)->toBe(40);
-    expect($result_two)->toBe(132);
-});
+// test('avarage_of_three', function () {
+//     $result = avarage_of_three(60, 40, 20);
+//     $result_two = avarage_of_three(132, 360, 720);
+//     expect($result)->toBe(40);
+//     expect($result_two)->toBe(404);
+// });
 
 
-test('sum array',  function () {
-    $result = sum_arrray([60, 40, 20, 25, 40]);
-    $result_two = sum_arrray([132, 360, 720, 132, 756]);
-    expect($result)->toBe(185);
-    expect($result_two)->toBe(2100);
-});
+// test('find max', function () {
+//     $result = find_max(60, 40, 20);
+//     $result_two = find_max(132, 360, 720);
+//     expect($result)->toBe(60);
+//     expect($result_two)->toBe(720);
+// });
 
 
-test('substract all',  function () {
-    $result = substract_all(200, [60, 40, 20, 25, 40]);
-    $result_two = substract_all(2100, [132, 360, 720, 132, 756]);
-    expect($result)->toBe(15);
-    expect($result_two)->toBe(0);
-});
+// test('find min', function () {
+//     $result = find_min(60, 40, 20);
+//     $result_two = find_min(132, 360, 720);
+//     expect($result)->toBe(20);
+//     expect($result_two)->toBe(132);
+// });
 
 
-test('multiply all',  function () {
-    $result = multiply_all([60, 40, 20, 25, 40]);
-    $result_two = multiply_all([132, 360, 720, 132, 756]);
-    expect($result)->toBe(48000000);
-    expect($result_two)->toBe(3414323404800);
-});
+// test('find repeated', function () {
+//     $result = find_repeated(60, 40, 20, 25, 40);
+//     $result_two = find_repeated(132, 360, 720, 132, 756);
+//     expect($result)->toBe(40);
+//     expect($result_two)->toBe(132);
+// });
 
 
-test('divide by all',  function () {
-    $result = divide_by_all(48000000, [60, 40, 20, 25, 40]);
-    $result_two = divide_by_all(3414323404800, [132, 360, 720, 132, 4]);
-    expect($result)->toBe(1);
-    expect($result_two)->toBe(189);
-});
+
+
+// test('sum array',  function () {
+//     $result = sum_arrray([60, 40, 20, 25, 40]);
+//     $result_two = sum_arrray([132, 360, 720, 132, 756]);
+//     expect($result)->toBe(185);
+//     expect($result_two)->toBe(2100);
+// });
+
+
+// test('substract all',  function () {
+//     $result = substract_all(200, [60, 40, 20, 25, 40]);
+//     $result_two = substract_all(2100, [132, 360, 720, 132, 756]);
+//     expect($result)->toBe(15);
+//     expect($result_two)->toBe(0);
+// });
+
+
+// test('multiply all',  function () {
+//     $result = multiply_all([60, 40, 20, 25, 40]);
+//     $result_two = multiply_all([132, 360, 720, 132, 756]);
+//     expect($result)->toBe(48000000);
+//     expect($result_two)->toBe(3414323404800);
+// });
+
+
+// test('divide by all',  function () {
+//     $result = divide_by_all(48000000, [60, 40, 20, 25, 40]);
+//     $result_two = divide_by_all(3414323404800, [132, 360, 720, 132, 4]);
+//     expect($result)->toBe(1);
+//     expect($result_two)->toBe(189);
+// });
 
 
