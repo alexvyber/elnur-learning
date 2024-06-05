@@ -50,3 +50,33 @@ test('Divide 3 numbers Works', function () {
     expect($result)->toBe(3);
     expect($resultTow)->toBe(9);
 });
+
+test('avarage_of_three', function () {
+    $result = avarage_of_three(60, 40, 20);
+    $result_two = avarage_of_three(132, 360, 720);
+    expect($result)->toBe(40);
+    expect($result_two)->toBe(404);
+});
+
+
+test('find max', function () {
+    $result = find_max(60, 40, 20);
+    $result_two = find_max(132, 360, 720);
+    expect($result)->toBe(60);
+    expect($result_two)->toBe(720);
+});
+
+
+test('find min', function () {
+    $result = find_min(60, 40, 20);
+    $result_two = find_min(132, 360, 720);
+    expect($result)->toBe(20);
+    expect($result_two)->toBe(132);
+});
+
+test('find repeated', function () {
+    $result = find_repeated(60, 40, 20, 25, 40);
+    $result_two = find_repeated(132, 360, 720, 132, 756);
+    expect($result)->toBe(40);
+    expect($result_two)->toBe(132);
+});
