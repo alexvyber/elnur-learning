@@ -78,20 +78,20 @@ function avarage_of_three($a, $b, $c)
 
 
 
-function find_max($a, $b, $c)
-{
-    if ($a > $b) {
-        return $a;
-    } elseif ($b > $c) {
-        return $b;
-    } else {
-        return $c;
-    }
-}
+// function find_max($a, $b, $c)
+// {
+//     if ($a > $b) {
+//         return $a;
+//     } elseif ($b > $c) {
+//         return $b;
+//     } else {
+//         return $c;
+//     }
+// }
 
 
 
-function find_min($a, $b, $c)
+function findmin($a, $b, $c)
 {
     if ($a < $b) {
         return $a;
@@ -101,3 +101,42 @@ function find_min($a, $b, $c)
         return $c;
     }
 }
+
+function find_max($a, $b, $c){
+    if ($a > $b ){     
+        if($a > $c) {
+            return $a;
+        } else {
+            return $c;
+
+        }
+
+    }
+
+    if( $b > $c){         
+        return $b;
+    }
+
+    return $c;
+  
+}
+   
+function find_min($a, $b, $c){
+    if ($a < $b ){     
+        if($a < $c) {
+            return $a;
+        } else {
+            return $c;
+
+        }
+
+    }
+
+    if( $b < $c){         
+        return $b;
+    }
+
+    return $c;
+  
+}
+
