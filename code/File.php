@@ -24,23 +24,23 @@ function multiply(int $a, int $b): int
     return $a * $b;
 }
 
-function addThree(int $a, int $b): int
+function addThree(int $a, int $b, int $c): int
 {
-    return $a + $b + $b ;
+    return $a + $b + $c ;
 }
-
-function multiplyThree(int $a, int $b):int
+//
+function multiplyThree(int $a, int $b, int $c):int
  {
-    return  ($a * $b *$b);
+    return  ($a * $b * $c);
    
 }
-function divideThree ( int $a, int $b): int
+function divideThree ( int $a, int $b,int $c): int
 {
-    return ( $a / $b / $b);
+    return ( $a / $b /$c);
 }
-function substractThree (int $a, int $b): int
+function substractThree (int $a, int $b,int $c): int
 {
-    return $a - $b - $b;
+    return $a - $b - $c;
 }
 
 
