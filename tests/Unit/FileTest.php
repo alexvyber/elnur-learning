@@ -25,20 +25,28 @@ test('Multiply Works', function () {
 
 test('Multiply 3 numbers Works', function () {
     $result = multiplyThree(10, 2, 2);
+    $resultTwo = multiplyThree(10, 2, 3);
     expect($result)->toBe(40);
+    expect($resultTwo)->toBe(60);
 });
 
 test('Add 3 numbers Works', function () {
     $result = addThree(10, 2, 2);
+    $resultTwo = addThree(10, 2, 6);
     expect($result)->toBe(14);
+    expect($resultTwo)->toBe(18);
 });
 
 test('Substract 3 numbers Works', function () {
     $result = substractThree(10, 2, 2);
+    $resultTwo = substractThree(10, 2, 6);
     expect($result)->toBe(6);
+    expect($resultTwo)->toBe(2);
 });
 
 test('Divide 3 numbers Works', function () {
     $result = divideThree(27, 3, 3);
+    $resultTow = divideThree(243, 9, 3);
     expect($result)->toBe(3);
+    expect($resultTow)->toBe(9);
 });
