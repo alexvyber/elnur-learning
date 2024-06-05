@@ -56,23 +56,6 @@ function substractThree(int $a, int $b, int $c): int
 // }
 
 
-function findmin(int $a, int $b, int $c)
-{
-    // $num =  min($a, $b, $c);
-    // return $num;
-}
-// test('find repeated', function () {
-//     $result = find_repeated(60, 40, 20, 25, 40);
-//     $result_two = find_repeated(132, 360, 720, 132, 756);
-//     expect($result)->toBe(40);
-//     expect($result_two)->toBe(132);
-
-function find_repeated(int $a, int $b, int $c, int $g, int $f)
-{
-    $number = ar($a, $b, $c, $g, $f);
-    $number1 = array_flip(array_count_values($number));
-    return $number1;
-}
 
 function find_max_of_two(int $a, int $b)
 {
@@ -122,14 +105,9 @@ function avarage_of_two(int $a, int $b)
             return $c;
         }
     }
+ 
 
-
-    // test('find min', function () {
-    //     $result = find_min(60, 40, 20);
-    //     $result_two = find_min(132, 360, 720);
-    //     expect($result)->toBe(20);
-    //     expect($result_two)->toBe(132);
-    // });
+    
      function find_min ($a, $b, $c){
         if ($a <$b){
             return $a;
