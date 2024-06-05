@@ -123,6 +123,20 @@ test('find min', function () {
     $result_three = find_min(360, 720, 132);
     $result_four = find_min(720, 360, 132);
 
+    $all_cases = [
+        [1,2,3, 1],
+        [1,3,2, 1],
+        [2,1,3, 1],
+        [2,3,1, 1],
+        [3,2,1, 1],
+        [3,1,2, 1],
+    ];
+
+    foreach($all_cases as $case) {
+        $res = find_min($case[0],$case[1],$case[2]);
+        expect($res)->toBe($case[3]);    
+    }
+
     expect($result)->toBe(20);
     expect($result_two)->toBe(132);
     expect($result_three)->toBe(132);
