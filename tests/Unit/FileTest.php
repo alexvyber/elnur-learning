@@ -106,8 +106,8 @@ test('find max', function () {
     ];
 
     foreach($all_cases as $case) {
-        $res = find_max($case[0],$case[1],$case[2]);
-        expect($res)->toBe($case[3]);    
+        $res = find_max($case[0], $case[1], $case[2]);
+        expect($res)->toBe($case[3]);
     }
 
     expect($result)->toBe(60);
@@ -133,8 +133,8 @@ test('find min', function () {
     ];
 
     foreach($all_cases as $case) {
-        $res = find_min($case[0],$case[1],$case[2]);
-        expect($res)->toBe($case[3]);    
+        $res = find_min($case[0], $case[1], $case[2]);
+        expect($res)->toBe($case[3]);
     }
 
     expect($result)->toBe(20);

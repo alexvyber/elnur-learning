@@ -102,41 +102,36 @@ function findmin($a, $b, $c)
     }
 }
 
-function find_max($a, $b, $c){
-    if ($a > $b ){     
+function find_max($a, $b, $c)
+{
+    if ($a > $b) {
         if($a > $c) {
             return $a;
         } else {
             return $c;
-
         }
-
     }
 
-    if( $b > $c){         
+    if($b > $c) {
         return $b;
     }
 
     return $c;
-  
 }
-   
-function find_min($a, $b, $c){
-    if ($a < $b ){     
+
+function find_min($a, $b, $c)
+{
+    if ($a < $b) {
         if($a < $c) {
             return $a;
         } else {
             return $c;
-
         }
-
     }
 
-    if( $b < $c){         
+    if($b < $c) {
         return $b;
     }
 
     return $c;
-  
 }
-
