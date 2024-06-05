@@ -56,7 +56,7 @@ function substractThree(int $a, int $b, int $c): int
 // }
 
 
-function find_min(int $a, int $b, int $c)
+function findmin(int $a, int $b, int $c)
 {
     // $num =  min($a, $b, $c);
     // return $num;
@@ -95,13 +95,48 @@ function find_min_of_two(int $a, int $b)
 
 
 
-// test('avarage_of_two', function () {
-//     $result = avarage_of_two(60, 40, );
-//     $result_two = avarage_of_two( 100, 200);
-//     expect($result)->toBe(50);
-//     expect($result_two)->toBe(150);
+
+
 
 function avarage_of_two(int $a, int $b)
 {
     return ($a + $b) / 2;
 }
+
+
+    
+
+    function avarage_of_three ($a, $b, $c) {
+        
+        return ($b + $a + $c)/3;
+    }
+    
+
+    
+    function find_max ($a, $b, $c){
+        if ($a > $b) {
+            return $a;
+         } elseif ($b > $c){
+            return $b;
+        } else {
+            return $c;
+        }
+    }
+
+
+    // test('find min', function () {
+    //     $result = find_min(60, 40, 20);
+    //     $result_two = find_min(132, 360, 720);
+    //     expect($result)->toBe(20);
+    //     expect($result_two)->toBe(132);
+    // });
+     function find_min ($a, $b, $c){
+        if ($a <$b){
+            return $a;
+        } elseif ($b < $c){
+            return $b;
+        } else {
+            return $c;
+        }
+     }
+     
